@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia Web - Desarrollo de Páginas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { color: #333; background: #f9f9f9; }
+    header { background: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    header h1 { font-size: 1.5rem; color: #2563eb; }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #2563eb; }
+
+    .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 90vh; text-align: center; background: linear-gradient(to right, #2563eb, #3b82f6); color: white; padding: 2rem; }
+    .hero h2 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .btn { background: white; color: #2563eb; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+    .btn:hover { background: #f1f5f9; }
+
+    .services { padding: 4rem 2rem; text-align: center; }
+    .services h3 { font-size: 2rem; margin-bottom: 2rem; }
+    .service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: auto; }
+    .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card h4 { margin-bottom: 1rem; color: #2563eb; }
+
+    .contact { padding: 4rem 2rem; text-align: center; background: #2563eb; color: white; }
+    .contact h3 { font-size: 2rem; margin-bottom: 1rem; }
+    .contact p { margin-bottom: 2rem; font-size: 1.1rem; }
+    .contact .btn { background: white; color: #2563eb; }
+
+    footer { background: #1e293b; color: #cbd5e1; padding: 2rem; text-align: center; font-size: 0.9rem; }
+    footer a { color: #3b82f6; margin: 0 0.5rem; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Agencia Web</h1>
+    <nav>
+      <a href="#services">Servicios</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Diseñamos y desarrollamos tu página web</h2>
+    <p>Impulsa tu negocio con un sitio moderno, rápido y optimizado.</p>
+    <a href="#contact" class="btn">Contáctanos</a>
+  </section>
+
+  <section id="services" class="services">
+    <h3>Nuestros Servicios</h3>
+    <div class="service-list">
+      <div class="card">
+        <h4>Diseño Web</h4>
+        <p>Diseños atractivos y modernos adaptados a tu marca.</p>
+      </div>
+      <div class="card">
+        <h4>Desarrollo a medida</h4>
+        <p>Soluciones personalizadas con la mejor tecnología.</p>
+      </div>
+      <div class="card">
+        <h4>Optimización SEO</h4>
+        <p>Mejora tu posicionamiento en buscadores y aumenta tu visibilidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>¿Listo para empezar?</h3>
+    <p>Contáctanos hoy y llevemos tu proyecto al siguiente nivel.</p>
+    <a href="mailto:contacto@agenciaweb.com" class="btn">Enviar un correo</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Agencia Web - Todos los derechos reservados</p>
+    <p>
+      <a href="#">LinkedIn</a> | 
+      <a href="#">Twitter</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
